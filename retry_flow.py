@@ -7,6 +7,7 @@ def unstable_task():
   if n <= 7:
     raise Exception("Random failure!")
     print("Success on attempt")
-    @flow
+
+@flow
 def retry_example():
   unstable_task()
