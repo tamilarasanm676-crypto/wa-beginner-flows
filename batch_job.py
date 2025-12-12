@@ -28,5 +28,4 @@ load(processed)
 
 
 if __name__ == "__main__":
-
-etl_flow()
+  etl_flow()
