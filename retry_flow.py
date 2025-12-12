@@ -9,5 +9,5 @@ def unstable_task():
     print("Success on attempt")
 
 @flow
-def retry_example()
+def retry_example():
   unstable_task()
