@@ -7,24 +7,20 @@ def extract():
 
 
 @task
-
 def transform(data):
   return f"{data} → Transformed"
 
 
 @task
-
 def load(data):
   print(f"Loading: {data}")
 
 
 @flow
-
 def etl_flow():
   raw = extract()
-
-processed = transform(raw)
-load(processed)
+  processed = transform(raw)
+  load(processed)
 
 
 if __name__ == "__main__":
